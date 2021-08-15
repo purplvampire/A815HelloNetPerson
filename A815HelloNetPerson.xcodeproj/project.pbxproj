@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FB73B1F0C9503C362995C4E /* Pods_A815HelloNetPerson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0849BE4C57847D9ACEB99B8 /* Pods_A815HelloNetPerson.framework */; };
 		AE5A1C7626C902F5001601E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A1C7526C902F5001601E1 /* AppDelegate.swift */; };
 		AE5A1C7826C902F5001601E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A1C7726C902F5001601E1 /* SceneDelegate.swift */; };
 		AE5A1C7A26C902F5001601E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A1C7926C902F5001601E1 /* ViewController.swift */; };
 		AE5A1C7D26C902F5001601E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A1C7B26C902F5001601E1 /* Main.storyboard */; };
 		AE5A1C7F26C902FA001601E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5A1C7E26C902FA001601E1 /* Assets.xcassets */; };
 		AE5A1C8226C902FA001601E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5A1C8026C902FA001601E1 /* LaunchScreen.storyboard */; };
+		AE5A1C8A26C904EA001601E1 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A1C8926C904EA001601E1 /* APIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78B29BD3E5E676E350BB7A54 /* Pods-A815HelloNetPerson.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A815HelloNetPerson.debug.xcconfig"; path = "Target Support Files/Pods-A815HelloNetPerson/Pods-A815HelloNetPerson.debug.xcconfig"; sourceTree = "<group>"; };
+		93332CF5DB24895D5060D67E /* Pods-A815HelloNetPerson.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A815HelloNetPerson.release.xcconfig"; path = "Target Support Files/Pods-A815HelloNetPerson/Pods-A815HelloNetPerson.release.xcconfig"; sourceTree = "<group>"; };
 		AE5A1C7226C902F5001601E1 /* A815HelloNetPerson.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A815HelloNetPerson.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5A1C7526C902F5001601E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE5A1C7726C902F5001601E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AE5A1C7E26C902FA001601E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5A1C8126C902FA001601E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE5A1C8326C902FA001601E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5A1C8926C904EA001601E1 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		B0849BE4C57847D9ACEB99B8 /* Pods_A815HelloNetPerson.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_A815HelloNetPerson.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB73B1F0C9503C362995C4E /* Pods_A815HelloNetPerson.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5691004B996AE259E3FBF581 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78B29BD3E5E676E350BB7A54 /* Pods-A815HelloNetPerson.debug.xcconfig */,
+				93332CF5DB24895D5060D67E /* Pods-A815HelloNetPerson.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		AE5A1C6926C902F5001601E1 = {
 			isa = PBXGroup;
 			children = (
 				AE5A1C7426C902F5001601E1 /* A815HelloNetPerson */,
 				AE5A1C7326C902F5001601E1 /* Products */,
+				5691004B996AE259E3FBF581 /* Pods */,
+				F6965466C6690EE2ECA4EB09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +74,7 @@
 		AE5A1C7426C902F5001601E1 /* A815HelloNetPerson */ = {
 			isa = PBXGroup;
 			children = (
+				AE5A1C8926C904EA001601E1 /* APIModel.swift */,
 				AE5A1C7526C902F5001601E1 /* AppDelegate.swift */,
 				AE5A1C7726C902F5001601E1 /* SceneDelegate.swift */,
 				AE5A1C7926C902F5001601E1 /* ViewController.swift */,
@@ -67,6 +86,14 @@
 			path = A815HelloNetPerson;
 			sourceTree = "<group>";
 		};
+		F6965466C6690EE2ECA4EB09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0849BE4C57847D9ACEB99B8 /* Pods_A815HelloNetPerson.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5A1C8626C902FA001601E1 /* Build configuration list for PBXNativeTarget "A815HelloNetPerson" */;
 			buildPhases = (
+				CC99EBC2C2E5FE869F7158ED /* [CP] Check Pods Manifest.lock */,
 				AE5A1C6E26C902F5001601E1 /* Sources */,
 				AE5A1C6F26C902F5001601E1 /* Frameworks */,
 				AE5A1C7026C902F5001601E1 /* Resources */,
+				8919A76471011362B269CECE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8919A76471011362B269CECE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetPerson/Pods-A815HelloNetPerson-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetPerson/Pods-A815HelloNetPerson-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-A815HelloNetPerson/Pods-A815HelloNetPerson-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC99EBC2C2E5FE869F7158ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-A815HelloNetPerson-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE5A1C6E26C902F5001601E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE5A1C8A26C904EA001601E1 /* APIModel.swift in Sources */,
 				AE5A1C7A26C902F5001601E1 /* ViewController.swift in Sources */,
 				AE5A1C7626C902F5001601E1 /* AppDelegate.swift in Sources */,
 				AE5A1C7826C902F5001601E1 /* SceneDelegate.swift in Sources */,
@@ -283,6 +355,7 @@
 		};
 		AE5A1C8726C902FA001601E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B29BD3E5E676E350BB7A54 /* Pods-A815HelloNetPerson.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		AE5A1C8826C902FA001601E1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93332CF5DB24895D5060D67E /* Pods-A815HelloNetPerson.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

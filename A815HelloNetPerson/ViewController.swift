@@ -6,13 +6,27 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let model = APIModel.share
+        
+        model.queryRandomUserAlamofire { response, error in
+            if let data = response as? Data {
+                let json = JSON(data)
+                print(json)
+            }
+        }
+               
+        
+        
+        
+        
     }
+
 
 
 }
